@@ -90,6 +90,8 @@ MonoBehaviour:
   imgAnimal: {fileID: 7024819593818458080}
   animalNo: 0
   score: 0
+  isGetPanel: 0
+  boxCollider2D: {fileID: -8322973427671853804}
 --- !u!61 &-8322973427671853804
 BoxCollider2D:
   m_ObjectHideFlags: 0

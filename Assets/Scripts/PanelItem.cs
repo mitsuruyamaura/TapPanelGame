@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 public class PanelItem : MonoBehaviour
@@ -44,7 +42,7 @@ public class PanelItem : MonoBehaviour
         }
         isClickable = true;
         btnPanel.interactable = false;
-        playerController.Move(ArrowDirectionType);
+        playerController.JudgeMove(ArrowDirectionType);
         panelCreater.NextPanels();
     }
 }

@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 public class AnimalPanelItem : MonoBehaviour
@@ -9,6 +7,7 @@ public class AnimalPanelItem : MonoBehaviour
     public int animalNo;
     public int score;
     public bool isGetPanel;
+    public BoxCollider2D boxCollider2D;
 
     public void SetUpAnimalPanel(int no, int score)
     {
@@ -20,5 +19,6 @@ public class AnimalPanelItem : MonoBehaviour
     public void GetPanel() {
         imgAnimal.color = new Color(1, 1, 1, 0.25f);
         isGetPanel = true;
+        boxCollider2D.enabled = false;
     }
 }
